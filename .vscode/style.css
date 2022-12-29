@@ -1,0 +1,119 @@
+body{
+    background: #ff7979;
+    background: -webkit-linear-gradient(to right),#ff7979,wheat;
+    background: linear-gradient(to right),#ff7979,wheat;
+    font-family: "Popping", sans-serif;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.row{
+    width: 45%;
+
+}
+.left-container h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px; 
+    line-height: 55px;
+    color: #ffffff;
+
+}
+.left-container p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px; 
+    line-height: 26px;
+    color: #ffffff;
+
+}
+.right-container p{
+    background: #5e54a4;
+    color: #fff;
+    box-shadow:0px 8px 0px rgba(0,0,0,0.14688);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight:700;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.267857px;
+    height: 40px;
+    padding-top: 15px;
+}
+form{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px rgba(0,0,0,0.14688);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+::placeholder{
+    color: #dcdbe5;
+    font-weight: 400;
+}
+/* ::-webkit-input-placeholder{
+    color: #dcdbe5;
+    font-weight: 400;
+}
+::-moz-placeholder{
+    color: #dcdbe5;
+    font-weight: 400;
+}
+:-moz-placeholder{
+    color: #dcdbe5;
+    font-weight: 400;
+
+} */
+input{
+    border: 1px solid #5e54a4;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 35px;
+    letter-spacing: 0.25px;
+    padding: 5px 19px;
+}
+input[type ="submit"]{
+    background: #38cc8b;
+    box-shadow: inset 0px -4px 0px rgba(0,0,0,0.0908);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.form-group{
+    position: relative;
+}
+.form-group img{
+    display: none;
+}
+.form-group div{
+    color: red;
+}
+img{
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    top: 25%;
+}
+@media screen  and (max-width:768px) {
+.container{
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+}    
+.row{
+    width: 95%;
+}
+}
